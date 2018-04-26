@@ -1,0 +1,9 @@
+server:
+  port: 8410
+spring:
+  application:
+    name: springCloud-provider
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8420/eureka/
