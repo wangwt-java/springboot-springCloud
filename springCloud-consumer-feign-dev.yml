@@ -1,3 +1,4 @@
+myname: wwt
 server:
   port: 8430
 spring:
