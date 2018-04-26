@@ -1,0 +1,24 @@
+server:
+  port: 8430
+spring:
+  application:
+    name: springCloud-consumer-feign
+  boot:
+    admin:
+      url: http://localhost:8450
+management:
+  security:
+    enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8420/eureka/
+feign:
+  hystrix:
+    enabled: true
+info:
+  app:
+    name: "@project.name@"
+    description: "@project.description@"
+    version: "@project.version@"
+    spring-boot-version: "@project.parent.version@"
